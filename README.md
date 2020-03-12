@@ -1,11 +1,5 @@
----
-title: "Usage_Instruction_version_0.1.1"
-author: "Subhayan"
-date: "3/12/2020"
-output:
-  html_document: default
-  pdf_document: default
----
+#CloneStrat
+A package for scaled and allelic imbalance adjusted clonal deconvolution
 
 ## Installation instructions
 
@@ -172,10 +166,6 @@ CN.est.1 <- CopySeg(m16,tumor.sample="P1883_147",normal.sample="P1883_118",
 ## Here we have estimated allelic segmentation for the tumor sample 'P1883_147'
 ## Only first 30 rows are visible below
 ```
-```{r, eval=TRUE, echo=FALSE}
-a<-dplyr::as_tibble(read.table("test.txt",header=T))[1:30,]
-DT::datatable(a, rownames = FALSE, filter="top", options = list(pageLength = 5, scrollX=T) )
-```
 
 ## Auxiliary functions
 
@@ -186,16 +176,9 @@ WES <- readxl::read_excel("WES.xlsx")  ##This step requires the package 'readxl'
 sample.name <- c("3407_18","6962_18","6963_18","6964_18","6965_18")
 CS.dat <- mutect2.qc(WES,sample.name)
 ```
-```{r, eval=TRUE, echo=FALSE}
-DT::datatable(CS.dat, rownames = FALSE, filter="top", options = list(pageLength = 5, scrollX=T) )
-```
 
 **A test** is provided to check the goodness of the cluster fit. This will indicate existence of outliers.
 ```{r, eval=FALSE, echo=TRUE}
 CS.test<-T.goodness.test(es)$rej
-## The variants that can only belong to one clone is shown below
-```
-```{r, eval=TRUE, echo=FALSE}
-a<-dplyr::as_tibble(read.table("rej.txt",header=T))
-DT::datatable(a, rownames = FALSE, filter="top", options = list(pageLength = 5, scrollX=T) )
+## The variants that can only belong to one clone is shown
 ```
