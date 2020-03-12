@@ -1,4 +1,4 @@
-#CloneStrat
+# CloneStrat
 A package for scaled and allelic imbalance adjusted clonal deconvolution
 
 ## Installation instructions
