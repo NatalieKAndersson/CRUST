@@ -1,10 +1,5 @@
----
-title: "CloneStrat"
-output: 
-  html_document:
-    includes:
-      after_body: footer.html
----
+▾ _includes/
+    footer.html
 
 # CloneStrat
 A package for scaled and allelic imbalance adjusted clonal deconvolution
