@@ -190,3 +190,10 @@ a request!
 <p style="text-align: center;"><span style="color: #808080;"><em>mailmesubhayan@gmail.com</em></span></p>
 </center>
 
+---
+title: "Your title"
+output: 
+  html_document:
+    includes:
+      after_body: footer.html
+---
