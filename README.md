@@ -1,5 +1,5 @@
 # CloneStrat
-A package for scaled and allelic imbalance adjusted clonal deconvolution
+A package for scaled and allelic imbalance adjusted clonal deconvolution of NGS data.
 
 ## Installation instructions
 
