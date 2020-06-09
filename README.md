@@ -168,7 +168,7 @@ CN.est.1 <- CopySeg(m16,tumor.sample="P1883_147",normal.sample="P1883_118",
 
 ```{r, eval=TRUE, echo=TRUE}
 WES <- readxl::read_excel("WES.xlsx")  ##This step requires the package 'readxl'. If unavailable please install.
-sample.name <- c("3407_18","6962_18","6963_18","6964_18","6965_18")
+sample.name <- c("X1","X2","X3","X4","X5")
 CS.dat <- mutect2.qc(WES,sample.name)
 ```
 
