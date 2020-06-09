@@ -1,3 +1,11 @@
+---
+title: "CloneStrat"
+output: 
+  html_document:
+    includes:
+      after_body: footer.html
+---
+
 # CloneStrat
 A package for scaled and allelic imbalance adjusted clonal deconvolution
 
@@ -184,13 +192,6 @@ Functions to plot copy number estimation and figure out allelic composition. I a
 More features will be added gradually. If you have feature that you'd like to see incorporated in `CloneStrat`, please send 
 a request!
 
----
-title: "Your title"
-output: 
-  html_document:
-    includes:
-      after_body: footer.html
----
 
 &nbsp;
 <hr />
