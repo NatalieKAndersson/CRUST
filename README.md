@@ -1,4 +1,4 @@
-https://github.com/Subhayan18/CloneStrat/blob/master/footer.html
+ https://htmlpreview.github.io/https://github.com/Subhayan18/CloneStrat/blob/master/footer.html
 
 # CloneStrat
 A package for scaled and allelic imbalance adjusted clonal deconvolution
