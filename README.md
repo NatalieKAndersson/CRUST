@@ -182,22 +182,11 @@ CS.test<-T.goodness.test(es)$rej
 Functions to plot copy number estimation and figure out allelic composition. I am also testing a new method to estimating copy numbers which gives user more freedom to tweak.
 
 More features will be added gradually. If you have feature that you'd like to see incorporated in `CloneStrat`, please send 
-a request @ **mailmesubhayan(at)gmail(dot)com**
+a request!
 
-&nbsp;
 <hr />
+<center>
 <p style="text-align: center;">A work by <a href="https://github.com/Subhayan18/">Subhayan Chattopadhyay</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>mailmesubhayan@gmail.com</em></span></p>
+</center>
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Add font awesome icons -->
-<p style="text-align: center;">
-    <a href="https://twitter.com/SubhayanCh" class="fa fa-twitter"></a>
-    <a href="https://www.linkedin.com/in/subhayan-chattopadhyay-46b188a3/" class="fa fa-linkedin"></a>
-    <a href="https://github.com/Subhayan18/" class="fa fa-github"></a>
-	<a href="https://www.facebook.com/subhayanc" class="fa fa-facebook"></a>
-</p>
-
-&nbsp;
