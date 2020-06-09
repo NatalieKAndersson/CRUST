@@ -177,3 +177,10 @@ CS.dat <- mutect2.qc(WES,sample.name)
 CS.test<-T.goodness.test(es)$rej
 ## The variants that can only belong to one clone is shown
 ```
+##Coming soon
+
+Functions to plot copy number estimation and figure out allelic composition. I am also testing a new method to estimating copy numbers which gives user more freedom to tweak.
+
+[![alt text][1.1]][1]
+[1.1]: http://i.imgur.com/P3YfQoD.png
+[1]: http://www.facebook.com/sednaoui
