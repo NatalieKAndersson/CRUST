@@ -59,11 +59,11 @@ res.1 <- cluster.doc(test.dat, sample = 1, vaf = 2,
 
 <center>
 
-![VAF distribution](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.1.png)
+![VAF distribution](https://github.com/Subhayan18/CloneStrat/blob/master/source/test.dat.1.png)
 
-![BIC changes](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.2.png)
+![BIC changes](https://github.com/Subhayan18/CloneStrat/blob/master/source/test.dat.2.png)
 
-![Clonal deconvolution](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.3.png)
+![Clonal deconvolution](https://github.com/Subhayan18/CloneStrat/blob/master/source/test.dat.3.png)
 
 </center>
 
