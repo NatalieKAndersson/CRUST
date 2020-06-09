@@ -1,5 +1,3 @@
- https://htmlpreview.github.io/?https://github.com/Subhayan18/CloneStrat/blob/master/footer.html
-
 # CloneStrat
 A package for scaled and allelic imbalance adjusted clonal deconvolution
 
@@ -184,5 +182,5 @@ CS.test<-T.goodness.test(es)$rej
 Functions to plot copy number estimation and figure out allelic composition. I am also testing a new method to estimating copy numbers which gives user more freedom to tweak.
 
 More features will be added gradually. If you have feature that you'd like to see incorporated in `CloneStrat`, please send 
-a request!
+a request [here](https://htmlpreview.github.io/?https://github.com/Subhayan18/CloneStrat/blob/master/footer.html)
 
