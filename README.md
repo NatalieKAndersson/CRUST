@@ -184,16 +184,27 @@ Functions to plot copy number estimation and figure out allelic composition. I a
 More features will be added gradually. If you have feature that you'd like to see incorporated in `CloneStrat`, please send 
 a request!
 
-<hr />
-<center>
-<p style="text-align: center;">A work by <a href="https://github.com/Subhayan18/">Subhayan Chattopadhyay</a></p>
-<p style="text-align: center;"><span style="color: #808080;"><em>mailmesubhayan@gmail.com</em></span></p>
-</center>
-
 ---
 title: "Your title"
 output: 
   html_document:
     includes:
-      after_body: https://github.com/Subhayan18/CloneStrat/blob/master/footer.html
+      after_body: footer.html
 ---
+
+&nbsp;
+<hr />
+<p style="text-align: center;">A work by <a href="https://github.com/holtzy/">Yan Holtz</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>Yan.holtz.data@gmail.com</em></span></p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<p style="text-align: center;">
+    <a href="https://twitter.com/r_graph_gallery?lang=en" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/yan-holtz-2477534a/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/holtzy/" class="fa fa-github"></a>
+</p>
+
+&nbsp;
