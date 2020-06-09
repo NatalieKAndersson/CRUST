@@ -195,5 +195,5 @@ title: "Your title"
 output: 
   html_document:
     includes:
-      after_body: footer.html
+      after_body: https://github.com/Subhayan18/CloneStrat/blob/master/footer.html
 ---
