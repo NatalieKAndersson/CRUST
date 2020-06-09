@@ -59,11 +59,11 @@ res.1 <- cluster.doc(test.dat, sample = 1, vaf = 2,
 
 <center>
 
-![VAF distribution](https://github.com/Subhayan18/CloneStrat/source/test.dat.1.png)
+![VAF distribution](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.1.png)
 
-![BIC changes](https://github.com/Subhayan18/CloneStrat/source/test.dat.2.png)
+![BIC changes](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.2.png)
 
-![Clonal deconvolution](https://github.com/Subhayan18/CloneStrat/source/test.dat.3.png)
+![Clonal deconvolution](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.3.png)
 
 </center>
 
@@ -80,7 +80,7 @@ ggplot(es, aes(x=sample, y=mut, col=as.factor(sample))) + geom_point()
 
 <center>
 
-![VAF distribution for ES](https://github.com/Subhayan18/CloneStrat/source/test.dat.4.png)
+![VAF distribution for ES](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.4.png)
 
 </center>
 
@@ -98,7 +98,7 @@ res.2 <- cluster.doc(es, sample = 1, vaf = 2,
 
 <center>
 
-![Clonal deconvolution for ES](https://github.com/Subhayan18/CloneStrat/source/test.dat.5.png)
+![Clonal deconvolution for ES](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.5.png)
 
 </center>
 
@@ -113,7 +113,7 @@ ggplot(es.sc, aes(x=sample, y=scaled.vaf, col=as.factor(sample))) + geom_point()
 
 <center>
 
-![VAF distribution for scaled ES](https://github.com/Subhayan18/CloneStrat/source/test.dat.6.png)
+![VAF distribution for scaled ES](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.6.png)
 
 </center>
 
@@ -132,7 +132,7 @@ res.2 <- cluster.doc(es.sc, sample = 1, vaf = 3,
 
 <center>
 
-![Clonal deconvolution for scaled ES](https://github.com/Subhayan18/CloneStrat/source/test.dat.7.png)
+![Clonal deconvolution for scaled ES](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.7.png)
 
 </center>
 
@@ -146,7 +146,7 @@ res.3 <- cluster.doubt(res.2,1,3,c("sample_6","sample_7"),c(2,2,2,2))
 
 <center>
 
-![User rectified clonal deconvolution for scaled ES](https://github.com/Subhayan18/CloneStrat/source/test.dat.8.png)
+![User rectified clonal deconvolution for scaled ES](https://github.com/Subhayan18/CloneStrat/tree/master/source/test.dat.8.png)
 
 </center>
 
