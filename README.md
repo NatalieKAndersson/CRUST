@@ -8,11 +8,6 @@ A package for scaled and allelic imbalance adjusted clonal deconvolution
 install.packages(c("mclust","fpc","sequenza","vcfR","bootcluster","devtools",
                    "factoextra","FactoMineR","RcppArmadillo","installr"))
 
-installr::install.Rtools() 
-
-packageurl="https://cran.r-project.org/src/contrib/Archive/KODAMA/KODAMA_1.5.tar.gz"
-install.packages(packageurl,repos=NULL,type="source") 
-
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install("copynumber")
