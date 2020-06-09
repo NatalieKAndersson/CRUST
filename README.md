@@ -181,4 +181,8 @@ CS.test<-T.goodness.test(es)$rej
 
 Functions to plot copy number estimation and figure out allelic composition. I am also testing a new method to estimating copy numbers which gives user more freedom to tweak.
 
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
+
+<!-- display the social media buttons in your README -->
 [![alt text][http://i.imgur.com/P3YfQoD.png]][http://www.facebook.com/sednaoui]
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
