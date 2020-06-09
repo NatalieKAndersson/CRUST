@@ -1,4 +1,4 @@
-▾ _includes/
+includes/
     footer.html
 
 # CloneStrat
