@@ -6,7 +6,7 @@ A package for scaled and allelic imbalance adjusted clonal deconvolution of NGS 
 
 ```{r, eval=FALSE, echo=TRUE}
 install.packages(c("mclust","fpc","sequenza","vcfR","bootcluster","devtools",
-                   "factoextra","FactoMineR","RcppArmadillo","installr","ggplot2"))
+                   "factoextra","FactoMineR","RcppArmadillo","installr","ggplot2","falcon"))
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
@@ -155,11 +155,8 @@ res.3 <- cluster.doubt(res.2,1,3,c("sample_6","sample_7"),c(2,2,2,2))
 When the allelic make up is unavilable to the user, it can be estimated given the sequence reads from the constitutional DNA is also present. This can generally be obtained from a .vcf file before the variant calling.
 
 ```{r, eval=FALSE, echo=TRUE}
-m16 <- vcfR::read.vcfR("case_m16_P1883_147_mutect.vcf")
-CN.est.1 <- CopySeg(m16,tumor.sample="P1883_147",normal.sample="P1883_118",
-                  DP="DP",AD="AD",file.name="sample")
-## Here we have estimated allelic segmentation for the tumor sample 'P1883_147'
-## Only first 30 rows are visible below
+m16 <- vcfR::read.vcfR("tumor_data.vcf")
+CN.est <- AlleleComp(data=m16, AD = "AD", method = "apriori")
 ```
 
 ## Auxiliary functions
