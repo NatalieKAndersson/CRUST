@@ -178,5 +178,5 @@ CS.test<-T.goodness.test(es)$rej
 
 Functions to plot copy number estimation and figure out allelic composition. I am also testing a new method for estimating copy numbers which gives user more freedom to tweak.
 
-More features will be added gradually. If you'd like to see a specific feature incorporated in `CloneStrat`, you can send 
+More features will be added gradually. If you'd like to see a specific feature incorporated in `CloneStrat`, send me 
 a request [here](https://htmlpreview.github.io/?https://github.com/Subhayan18/CloneStrat/blob/master/footer.html)
