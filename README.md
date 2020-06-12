@@ -34,8 +34,9 @@ Let's take a look at the imaginary whole exome sequencing data built into the pa
 
 ```{r, eval=FALSE, echo=TRUE}
 ?test.dat
-head(test.dat)
 
+## let's have a look at the data itself
+head(test.dat)
 ```
 
 We will use this data to perform our first clonal deconvolution. A set of example user input is given below but there are lot of other choices in methods and inputs that can be provided.
@@ -108,6 +109,7 @@ As it is evident that the VAF distribution here is quite varied among samples, l
 es.sc<-seqn.scale(es,2,3)
 
 ## Let's check the scaled VAF distribution of the samples
+
 ggplot(es.sc, aes(x=sample, y=scaled.vaf, col=as.factor(sample))) + geom_point()
 ```
 
@@ -137,10 +139,19 @@ res.2 <- cluster.doc(es.sc, sample = 1, vaf = 3,
 </center>
 
 Can you plot the difference in the subclonal distributions for some of the samples now?
+*Hint*: observe how more data points become clonal after scaling for the first few samples.
 
-Now lets us assume we are not very satisfied as how things stand for sample 6 and sample 7. Instead of 2 clonal and 1 sub-clonal clouds we would rather see 
+Now let us assume we are not very satisfied as how things stand for **sample_6** and **sample_7**. Instead of **2 clonal and 1 sub-clonal clouds** we would rather see **2 clones and 2 subclones** for both samples.
+
+Here's how we can make that happen:
 
 ```{r, eval=FALSE, echo=TRUE}
+## Let's have a look at the function we can use for this:
+
+?cluster doubt
+
+## Now to the fitting:
+
 res.3 <- cluster.doubt(res.2,1,3,c("sample_6","sample_7"),c(2,2,2,2))
 ```
 
@@ -150,21 +161,31 @@ res.3 <- cluster.doubt(res.2,1,3,c("sample_6","sample_7"),c(2,2,2,2))
 
 </center>
 
-## Estimation of allelic segmentation
+## Estimation of allelic composition
 
-When the allelic make up is unavilable to the user, it can be estimated given the sequence reads from the constitutional DNA is also present. This can generally be obtained from a .vcf file before the variant calling.
+When the allelic make up (Copynumber data from SNP array) is unavilable to the user, it can be estimated given the sequence reads from the constitutional DNA is also present. This can generally be obtained from a .vcf file before the variant calling.
 
 ```{r, eval=FALSE, echo=TRUE}
+## A user provided .vcf file must contain data from one tumor sample
+## and a corresponding normal tissue sample
+
 m16 <- vcfR::read.vcfR("tumor_data.vcf")
 CN.est <- AlleleComp(data=m16, AD = "AD", method = "apriori")
 ```
 
 ## Auxiliary functions
 
-**Mutect2** is a popular variant caller. The package offers an extension that can convert a Mutect2 output to a data file compatible with the functions described.
+**Mutect2** is a popular variant caller that can be used to obtain quality controlled variant calls. Those calls can be tabulated with the **GATK** extension [**VariantsToTable**](https://gatk.broadinstitute.org/hc/en-us/articles/360042476292-VariantsToTable). **CloneStrat** offers an extension that can convert such an output to a data file compatible with the internal functions described.
 
 ```{r, eval=TRUE, echo=TRUE}
-WES <- readxl::read_excel("WES.xlsx")  ##This step requires the package 'readxl'. If unavailable please install.
+## Example whole exome seq data is provided in this repository
+## Let's query the function to be used:
+
+?mutect2.qc
+
+## Time to see it in action
+
+WES <- readxl::read_excel("WES.xlsx")
 sample.name <- c("X1","X2","X3","X4","X5")
 CS.dat <- mutect2.qc(WES,sample.name)
 ```
@@ -172,6 +193,7 @@ CS.dat <- mutect2.qc(WES,sample.name)
 **A test** is provided to check the goodness of the cluster fit. This will indicate existence of outliers.
 ```{r, eval=FALSE, echo=TRUE}
 CS.test<-T.goodness.test(es)$rej
+
 ## The variants that can only belong to one clone is shown
 ```
 ### Coming soon
