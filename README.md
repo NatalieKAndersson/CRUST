@@ -19,7 +19,7 @@ If no error message has popped up so far we are now ready to install the package
 *Note* Here on out it is assumed that the working directory has been changed to where the downloaded files are. Hence no additional path is defined.
 
 ```{r, eval=FALSE, echo=TRUE}
-install.packages("~PATH/CloneStrat_0.1.4.tar.gz", repos = NULL, type = "source")
+install.packages("~PATH/CloneStrat_0.1.5.tar.gz", repos = NULL, type = "source")
 ```
 
 We can now load the package in global environment.
