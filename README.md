@@ -138,7 +138,7 @@ res.2 <- cluster.doc(es.sc, sample = 1, vaf = 3,
 
 </center>
 
-Can you plot the difference in the subclonal distributions for some of the samples now?
+Can you spot the difference in the subclonal distributions for some of the samples now?
 *Hint*: observe how more data points become clonal after scaling for the first few samples.
 
 Now let us assume we are not very satisfied as how things stand for **sample_6** and **sample_7**. Instead of **2 clonal and 1 sub-clonal clouds** we would rather see **2 clones and 2 subclones** for both samples.
